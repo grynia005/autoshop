@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./image/car_registr.jpg"
+        alt="icon_registr"
+        width="150"
+        height="150"
+      />
+      <nav>
+        <ul>
+          <li><a href="#registr">Реєстрація</a></li>
+          <li><a href="./sing_in.html">Авторизація</a></li>
+          <li><a href="./car_search.html">Пошук авто</a></li>
+        </ul>
+      </nav>
+      <h2>Авто-UA</h2>
+      <hr />
+      <hr />
+    </header>
+    <main>
+      <h1>Реєстрація</h1>
+      <form
+        action="https://fom.in.ua/echo"
+        style="background-color: rgba(238, 238, 179, 0.185)"
+      >
+        <fieldset>
+          <legend>Введіть дані для реєстрації</legend>
+          <table>
+            <tr>
+              <td><label for="name">Ім'я</label></td>
+              <td>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="введіть ім'я"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="tel">Телефон</label></td>
+              <td>
+                <input
+                  id="tel"
+                  type="tel"
+                  placeholder="введіть номер телефону"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="введіть email"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="pass">Пароль</label></td>
+              <td>
+                <input
+                  id="pass"
+                  type="password"
+                  placeholder="введіть складний пароль"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="pass_chek">Підтвердіть пароль</label></td>
+              <td>
+                <input
+                  id="pass_chek"
+                  type="password"
+                  placeholder="перевірте пароль"
+                  required
+                />
+              </td>
+            </tr>
+          </table>
+          <button type="submit">Поїхали</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <h3>Обираючи Авто-UA, Ви обираєте <i>впевненість!</i></h3>
+      <address>
+        <ul>
+          <li>
+            <a
+              href="mailto:auto-ua@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >auto-ua@gmail.com (електронна адреса не існує)</a
+            >
+          </li>
+          <li>
+            <a
+              href="tel:+380990000002"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >+380990000002 (номер телефону не існує)</a
+            >
+          </li>
+        </ul>
+      </address>
+      <h2><strong>Слава Україні!!!</strong></h2>
+    </footer>
+  </body>
+</html>

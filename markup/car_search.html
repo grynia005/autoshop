@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пошук</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./image/car_search.jpg"
+        alt="icon_search"
+        width="150"
+        height="150"
+      />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Реєстрація</a></li>
+          <li><a href="./sing_in.html">Авторизація</a></li>
+          <li><a href="#">Пошук авто</a></li>
+        </ul>
+      </nav>
+      <h2>Авто-UA</h2>
+      <hr />
+      <hr />
+    </header>
+    <main>
+      <h2>Оберіть автомобіль саме для ВАС!</h2>
+      <form
+        action="https://fom.in.ua/echo"
+        style="background-color: rgba(192, 212, 203, 0.26)"
+      >
+        <fieldset>
+          <table>
+            <tr>
+              <td><label for="mark_car">Марка авто</label></td>
+              <td>
+                <select id="mark_car">
+                  <option>Audi</option>
+                  <option>Chevrolet</option>
+                  <option>Ford</option>
+                  <option>Honda</option>
+                  <option>Hyundai</option>
+                  <option>Kia</option>
+                  <option>Mazda</option>
+                  <option>Mercedes-Benz</option>
+                  <option>Mitsubishi</option>
+                  <option>Nissan</option>
+                  <option>Opel</option>
+                  <option>Peugeot</option>
+                  <option>Renault</option>
+                  <option>Skoda</option>
+                  <option>Toyota</option>
+                  <option>Volkswagen</option>
+                  <option>Volvo</option>
+                  <option>BMW</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="car_country">Країна випуску</label></td>
+              <td>
+                <select id="car_country">
+                  <option>Україна</option>
+                  <option>Німеччина</option>
+                  <option>Китай</option>
+                  <option>Японія</option>
+                  <option>Індія</option>
+                  <option>Південна Корея</option>
+                  <option>США</option>
+                  <option>Франція</option>
+                  <option>Чехія</option>
+                  <option>Швеція</option>
+                  <option>Англія</option>
+                  <option>Інше</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Тип кузова</label></td>
+              <td>
+                <p>
+                  <input type="checkbox" /> Кросовер/Позашляховик
+                  <input type="checkbox" /> Купе
+                  <input type="checkbox" /> Лифтбек
+                </p>
+                <p>
+                  <input type="checkbox" /> Седан
+                  <input type="checkbox" /> Пикап
+                  <input type="checkbox" /> Кабріолет
+                  <input type="checkbox" /> Хетчбек
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Ціна</label></td>
+              <td>
+                <p><input type="number" /> <input type="number" /></p>
+                <p>
+                  <input type="radio" name="money" checked /> Грн
+                  <input type="radio" name="money" /> USD
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Рік випуску</label></td>
+              <td>
+                <input type="number" min="1975" max="2022" />
+                <input type="number" min="1975" max="2022" />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Тип палива</label></td>
+              <td>
+                <input type="checkbox" /> Бензин
+                <input type="checkbox" /> Дизель
+                <input type="checkbox" /> Електро
+                <input type="checkbox" /> Гібрид <input type="checkbox" /> Інше
+              </td>
+            </tr>
+            <tr>
+              <td><label>Тип КПП</label></td>
+              <td>
+                <select>
+                  <option>МКПП</option>
+                  <option>АКПП</option>
+                  <option>Варіатор</option>
+                  <option>Роботизована КПП</option>
+                  <option>Тіптронік</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Технічний стан</label></td>
+              <td>
+                <select multiple>
+                  <option>Ідеальний</option>
+                  <option>Був в ДТП</option>
+                  <option>Гаражне зберігання</option>
+                  <option>Не фарбований</option>
+                  <option>Професфно виправлені пошкодження</option>
+                  <option>На ходу</option>
+                  <option>НЕ на ходу/На запчастини</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label>Колір</label></td>
+              <td>
+                <span style="color: rgb(113, 127, 139)"
+                  ><input type="checkbox" /> Білий</span
+                >
+                <span style="color: black"
+                  ><input type="checkbox" /> Чорний</span
+                >
+                <span style="color: red"
+                  ><input type="checkbox" /> Червоний</span
+                >
+                <span style="color: green"
+                  ><input type="checkbox" /> Зелений
+                </span>
+                <span style="color: blue"><input type="checkbox" /> Синій</span>
+                <span style="color: rgb(143, 143, 4)"
+                  ><input type="checkbox" /> Жовтий</span
+                >
+                <span style="color: gray"><input type="checkbox" /> Сірий</span>
+                <span><input type="checkbox" /> Інше</span>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Оснащеня/комфорт</label></td>
+              <td>
+                <input type="checkbox" /> Кондиціонер
+                <input type="checkbox" /> Клімат-контроль
+                <input type="checkbox" /> Електро підсилювач керма
+                <input type="checkbox" /> Електропакет
+                <input type="checkbox" /> Датчик дощу/світла
+                <input type="checkbox" /> LED-фари
+                <input type="checkbox" /> Шкіряний салон
+                <input type="checkbox" /> Android-auto/Apple CarPlay
+              </td>
+            </tr>
+          </table>
+          <button type="button">Поїхали</button>
+          <button type="reset">Скинути пошук</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <h3>Оберіть саме те, чого Ви бажаєте!!!</h3>
+      <address>
+        <ul>
+          <li>
+            <a
+              href="mailto:auto-ua@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >auto-ua@gmail.com (електронна адреса не існує)
+            </a>
+          </li>
+          <li>
+            <a
+              href="tel:+380990000002"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >+380990000002 (номер телефону не існує)
+            </a>
+          </li>
+        </ul>
+      </address>
+      <h2><strong>Слава Україні!!!</strong></h2>
+    </footer>
+  </body>
+</html>
