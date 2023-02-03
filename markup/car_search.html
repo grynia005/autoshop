@@ -81,15 +81,22 @@
               <td><label>Тип кузова</label></td>
               <td>
                 <p>
-                  <input type="checkbox" /> Кросовер/Позашляховик
-                  <input type="checkbox" /> Купе
-                  <input type="checkbox" /> Лифтбек
+                  <input id="cross" type="checkbox" />
+                  <label for="cross"> Кросовер/Позашляховик</label>
+                  <input id="cupe" type="checkbox" />
+                  <label for="cupe"> Купе</label>
+                  <input id="liftback" type="checkbox" />
+                  <label for="liftback"> Лифтбек</label>
                 </p>
                 <p>
-                  <input type="checkbox" /> Седан
-                  <input type="checkbox" /> Пикап
-                  <input type="checkbox" /> Кабріолет
-                  <input type="checkbox" /> Хетчбек
+                  <input id="sedan" type="checkbox" />
+                  <label for="sedan"> Седан</label>
+                  <input id="pickup" type="checkbox" />
+                  <label for="pickup"> Пикап</label>
+                  <input id="cabrio" type="checkbox" />
+                  <label for="cabrio"> Кабріолет</label>
+                  <input id="hatchback" type="checkbox" />
+                  <label for="hatchback"> Хетчбек</label>
                 </p>
               </td>
             </tr>
@@ -98,8 +105,8 @@
               <td>
                 <p><input type="number" /> <input type="number" /></p>
                 <p>
-                  <input type="radio" name="money" checked /> Грн
-                  <input type="radio" name="money" /> USD
+                  <input id="grn" type="radio" name="money" checked /><label for="grn">Грн</label> 
+                  <input id="usd" type="radio" name="money" /><label for="usd">USD</label> 
                 </p>
               </td>
             </tr>
@@ -113,10 +120,11 @@
             <tr>
               <td><label>Тип палива</label></td>
               <td>
-                <input type="checkbox" /> Бензин
-                <input type="checkbox" /> Дизель
-                <input type="checkbox" /> Електро
-                <input type="checkbox" /> Гібрид <input type="checkbox" /> Інше
+                <input id="petrol" type="checkbox" /><label for="petrol"> Бензин</label>
+                <input id="disel" type="checkbox" /><label for="disel"> Дизель</label>
+                <input id="electro" type="checkbox" /><label for="electro"> Електро</label>
+                <input id="hybrid" type="checkbox" /><label for="hybrid"> Гібрид </label>
+                <input id="other_gas" type="checkbox" /><label for="other_gas"> Інше</label>
               </td>
             </tr>
             <tr>
@@ -150,36 +158,66 @@
               <td><label>Колір</label></td>
               <td>
                 <span style="color: rgb(113, 127, 139)"
-                  ><input type="checkbox" /> Білий</span
+                  ><input type="checkbox" id="white" /><label for="white"
+                    >Білий</label
+                  ></span
                 >
                 <span style="color: black"
-                  ><input type="checkbox" /> Чорний</span
+                  ><input type="checkbox" id="black" /><label for="black"
+                    >Чорний</label
+                  ></span
                 >
                 <span style="color: red"
-                  ><input type="checkbox" /> Червоний</span
+                  ><input type="checkbox" id="red" /><label for="red"
+                    >Червоний</label
+                  ></span
                 >
                 <span style="color: green"
-                  ><input type="checkbox" /> Зелений
-                </span>
-                <span style="color: blue"><input type="checkbox" /> Синій</span>
-                <span style="color: rgb(143, 143, 4)"
-                  ><input type="checkbox" /> Жовтий</span
+                  ><input type="checkbox" id="green" /><label for="green"
+                    >Зелений</label
+                  ></span
                 >
-                <span style="color: gray"><input type="checkbox" /> Сірий</span>
-                <span><input type="checkbox" /> Інше</span>
+                <span style="color: blue"
+                  ><input type="checkbox" id="blue" /><label for="blue">
+                    Синій</label
+                  ></span
+                >
+                <span style="color: rgb(143, 143, 4)"
+                  ><input type="checkbox" id="yellow" /><label for="yellow">
+                    Жовтий</label
+                  ></span
+                >
+                <span style="color: gray"
+                  ><input type="checkbox" id="gray" /><label for="gray"
+                    >Сірий</label
+                  ></span
+                >
+                <span
+                  ><input type="checkbox" id="other" /><label for="other">
+                    Інше</label
+                  ></span
+                >
               </td>
             </tr>
             <tr>
-              <td><label>Оснащеня/комфорт</label></td>
+              <td><label>Оснащеня</label></td>
               <td>
-                <input type="checkbox" /> Кондиціонер
-                <input type="checkbox" /> Клімат-контроль
-                <input type="checkbox" /> Електро підсилювач керма
-                <input type="checkbox" /> Електропакет
-                <input type="checkbox" /> Датчик дощу/світла
-                <input type="checkbox" /> LED-фари
-                <input type="checkbox" /> Шкіряний салон
-                <input type="checkbox" /> Android-auto/Apple CarPlay
+                <input id="con" type="checkbox" />
+                <label for="con">Кондиціонер</label>
+                <input id="clim" type="checkbox" />
+                <label for="clim"> Клімат-контроль</label>
+                <input id="electro_power" type="checkbox" />
+                <label for="electro_power"> Електро підсилювач керма</label>
+                <input id="elektropaket" type="checkbox" />
+                <label for="elektropaket"> Електропакет</label>
+                <input id="rain_light" type="checkbox" />
+                <label for="rain_light"> Датчик дощу/світла</label>
+                <input id="led" type="checkbox" />
+                <label for="led"> LED-фари</label>
+                <input id="leather" type="checkbox" />
+                <label for="leather"> Шкіряний салон</label>
+                <input id="andro_apple" type="checkbox" />
+                <label for="andro_apple"> Android-auto/Apple CarPlay</label>
               </td>
             </tr>
           </table>
